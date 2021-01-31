@@ -1,0 +1,22 @@
+#chat-container {
+  width: 100%;
+}
+
+.chat-message-user {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.user-input-message {
+  margin: 30px 20px;
+}
+
+.user-input-message mat-form-field {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.user-input-message form button {
+  margin-left: 10px;
+  vertical-align: middle;
+}

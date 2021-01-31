@@ -1,1 +1,26 @@
-<p>chat works!</p>
+<div id="chat-container">
+  <app-chat-message [user]="user"></app-chat-message>
+
+  <div class="chat-message-user">
+    <app-chat-message [user]="user"></app-chat-message>
+  </div>
+
+  <app-chat-message [user]="user"></app-chat-message>
+
+  <div class="chat-message-user">
+    <app-chat-message [user]="user"></app-chat-message>
+  </div>
+
+  <mat-card class="user-input-message">
+    <form class="display-flex">
+      <mat-form-field appearance="outline">
+        <mat-label>Mensagem:</mat-label>
+        <input matInput placeholder="Escreva uma mensagem...">
+      </mat-form-field>
+
+      <button type="submit" mat-fab color="primary" aria-label="send message button">
+        <mat-icon>send</mat-icon>
+      </button>
+    </form>
+  </mat-card>
+</div>
