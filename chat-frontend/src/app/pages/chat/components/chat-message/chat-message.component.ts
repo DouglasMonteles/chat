@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { User } from './../../../../models/User.model';
+import { UserMessage } from '../../../../models/UserMessage.model';
 
 @Component({
   selector: 'app-chat-message',
@@ -9,7 +9,7 @@ import { User } from './../../../../models/User.model';
 export class ChatMessageComponent implements OnInit {
 
   @Input()
-  user: User = {
+  user: UserMessage = {
     name: '',
     message: '',
   };

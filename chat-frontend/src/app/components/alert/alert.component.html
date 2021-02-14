@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>Por favor, informe seu nome</h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <mat-label>Nome:</mat-label>
+    <input matInput name="name" [(ngModel)]="data.name">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button [mat-dialog-close]="data.name" cdkFocusInitial>Entrar no chat</button>
+  <button mat-button (click)="onNoClick()">Não, obrigado</button>
+</div>
